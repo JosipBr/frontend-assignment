@@ -9,7 +9,7 @@ const Task1: FunctionComponent = () => {
     "Item 5",
   ]);
 
-  return <div>#List goes here#</div>;
+  return <div>{items.map(i => <li>{i}</li>)}</div>;
 };
 
 export default Task1;
