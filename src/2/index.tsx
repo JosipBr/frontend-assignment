@@ -6,10 +6,10 @@ const Task2: FunctionComponent = () => {
   return (
     <div>
       <label>Controlled Input: </label>
-      <input />
+      <input onChange={(e) => setValue(e.target.value)}/>
       <br />
       <br />
-      <p>#Show Input value here#</p>
+      <p>{value}</p>
     </div>
   );
 };
